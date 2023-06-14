@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/UserSearchFrg">
+
+    <fragment
+        android:id="@+id/UserSearchFrg"
+        android:name="com.app.testapp.ui.usersearch.UserSearchScreen"
+        android:label="UserSearch"
+        tools:layout="@layout/fragment_user_search_screen">
+        <action
+            android:id="@+id/actionFollowsFragment"
+            app:destination="@id/UserFollowsFrg" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/UserFollowsFrg"
+        android:name="com.app.testapp.ui.userfollows.UserFollowsScreen"
+        android:label="Follows"
+        tools:layout="@layout/fragment_user_followers">
+<!--        <action-->
+<!--            android:id="@+id/actionFragmentAToFragmentB"-->
+<!--            app:destination="@id/fragmentB" />-->
+
+    </fragment>
+
+</navigation>
